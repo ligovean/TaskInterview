@@ -9,7 +9,6 @@ public class Array{
     }
 
     public void printArr(){
-        StringBuffer res;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(String.format("%02d", arr[i][j])+" ");
@@ -20,7 +19,6 @@ public class Array{
 
     //РЕКУРСИВНЫЙ МЕТОД ЗАПОЛНЕНИЯ СПИРАЛИ
     public int[] fillLine2(int demn,int loop,int[] res){
-        //int[] res = {1,1};
         int yLine = res[0];
         int xLine = res[1];
         int lastN;
