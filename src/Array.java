@@ -31,9 +31,13 @@ public class Array{
 
         //Заполнение последнего элемента
         if (lastN>=demn*demn-1)
-        {arr[yLine][xLine] = lastN;
+        {   if (demn%2!=0)
+            {arr[yLine][xLine] = lastN;
             res[0]=yLine;
-            res[1]=xLine;
+            res[1]=xLine;}
+            else
+            {res[0]=yLine;
+            res[1]=xLine-1;}
             return res;}
 
         for (int tern=1;tern<5;tern++){
